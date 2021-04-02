@@ -5,6 +5,7 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.StringTokenizer;
 
 public class ForProblem4 {
 	public static void main(String[] args) throws IOException {
@@ -19,24 +20,32 @@ public class ForProblem4 {
 		// 자세한 설명 및 다른 언어의 경우는 이 글에 설명되어 있다.
 		// 이 블로그 글에서 BOJ의 기타 여러 가지 팁을 볼 수 있다.
 		
-//		Scanner sc = new Scanner(System.in);
-//		int T = sc.nextInt();
+		// 첫 줄에 테스트케이스의 개수 T가 주어진다. T는 최대 1,000,000이다. 다음 T줄에는 각각 두 정수 A와 B가 주어진다. A와 B는 1 이상, 1,000 이하이다.
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); // scanner보다 더 빠르다
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
-		String str = br.readLine();
-		String arr[] = str.split(" ");
 		int T = Integer.parseInt(br.readLine());
+		
+		StringTokenizer st; // StringTokenizer 공부!!
 		
 		if(T>0) {
 			for(int i=0; i<T; i++) {
-				int a = Integer.parseInt(br.readLine());
-				int b = Integer.parseInt(br.readLine());
+				st = new StringTokenizer(br.readLine()," "); // 공백 짤라서 넣는다.
+				bw.write((Integer.parseInt(st.nextToken())+Integer.parseInt(st.nextToken()))+"\n");
+				
+//				int a = Integer.parseInt(br.readLine());
+//				int b = Integer.parseInt(br.readLine());
+//				
+//				int sum = a+b;
+//				bw.write(sum);
+//				bw.newLine();
 			}
 		}
 		
 		bw.flush();
+		
+		br.close();
 		bw.close();
 		
 		
