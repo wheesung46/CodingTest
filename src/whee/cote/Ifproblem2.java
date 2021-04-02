@@ -2,7 +2,7 @@ package whee.cote;
 
 import java.util.Scanner;
 
-public class Ifproblem2 {
+public class IfProblem2 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int score = sc.nextInt();

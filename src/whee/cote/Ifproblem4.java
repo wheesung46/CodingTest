@@ -2,7 +2,7 @@ package whee.cote;
 
 import java.util.Scanner;
 
-public class Ifproblem4 {
+public class IfProblem4 {
 	public static void main(String[] args) {
 		// 양양1 음양2 음음3 양음4 범위 -1000<=x,y<=1000 x!=0
 		Scanner sc = new Scanner(System.in);
