@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 public class whileProblem3 {
 	public static void main(String[] args) throws IOException {
@@ -23,20 +24,47 @@ public class whileProblem3 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
-		int tmp=0;
-		
-		while(true) {
-			int N = Integer.parseInt(br.readLine()); // 0<=N<=99
+		int N = Integer.parseInt(br.readLine()); // 0<=N<=99
+			
+		int originNum=N;
+			
+		int firstNum = 0;
+		int secondNum = 0;
+		int sum = 0;
+		int sumSecondNum = 0;
+			
+		int i = 0 ;
 			
 			if(N>=0 && N<=99) {
 				
 				if(N<10) { // N이 10보다 작으면
-					
+					N = Integer.parseInt(N+"0"); // N=2; tmp=20
 				}
+				
+				while(true){
+					// N이 10보다 크면 (ex- 26)
+					firstNum = (N/10)%10; // 2
+					secondNum = N%10; // 6
+					sum = firstNum + secondNum; // 2+6=8
+					sumSecondNum = sum%10;
+					
+					N = Integer.parseInt(Integer.toString(secondNum)+Integer.toString(sumSecondNum)); //68
+					i++;
+					
+					if(N == originNum) {
+						break;
+					}//end if
+				}//end while
+				System.out.println("길이 : "+i);
+				
+				bw.write(Integer.toString(i));
+				bw.flush();
+				
+				br.close();
+				bw.close();
 				
 			}else {
 				System.out.println("범위가 아닙니다.");
 			}
-		}
 	}
 }
