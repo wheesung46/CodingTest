@@ -11,8 +11,8 @@ public class ForProblem10 {
 		
 		if(num>=1 && num<=100) {
 			for(int i=0; i<num; i++) {
-				for(int j=0; j<num; j++) {
-					if(num-j==i+1) {
+				for(int j=1; j<=num; j++) {
+					if(num-i<=j) {
 						System.out.print("*");						
 					}
 					else {
