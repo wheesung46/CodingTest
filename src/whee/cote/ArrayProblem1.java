@@ -34,7 +34,7 @@ public class ArrayProblem1 {
 				}
 			}
 
-			System.out.println( min + " " + max);
+			System.out.println(min + " " + max);
 
 		}
 
