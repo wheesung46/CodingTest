@@ -2,7 +2,7 @@ package sso.cote.calcProblem;
 
 import java.util.Scanner;
 
-public class Calculationproblem10 { 
+public class Calculationproblem10 {  // 10430
 	public static void main(String[] args) {
 		// (A+B)%C는 ((A%C) + (B%C))%C 와 같을까?
 		// (A×B)%C는 ((A%C) × (B%C))%C 와 같을까?
