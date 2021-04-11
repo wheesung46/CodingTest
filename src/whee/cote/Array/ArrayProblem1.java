@@ -12,7 +12,6 @@ public class ArrayProblem1 {
 		int[] num = new int[N];
 
 		if (N >= 1 && N <= 1000000) {
-
 			for (int i = 0; i < N; i++) {
 				int temp = sc.nextInt();
 
@@ -20,7 +19,6 @@ public class ArrayProblem1 {
 					num[i] = temp;
 				}
 			}
-
 			int max = num[0];
 			int min = num[0];
 
@@ -33,11 +31,8 @@ public class ArrayProblem1 {
 					min = num[j];
 				}
 			}
-
 			System.out.println(min + " " + max);
-
 		}
-
 		sc.close();
 	}
 }

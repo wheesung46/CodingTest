@@ -26,7 +26,7 @@ public class ArrayProblem2 {
 
 				if (max < num[i]) {
 					max = num[i];
-					count = i+1;
+					count = i + 1;
 				}
 
 			} else {
