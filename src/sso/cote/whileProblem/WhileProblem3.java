@@ -38,7 +38,7 @@ public class WhileProblem3 { // 1110
 			if(N>=0 && N<=99) {
 				
 				if(N<10) { // N이 10보다 작으면
-					N = Integer.parseInt(N+"0"); // N=2; tmp=20
+					N = Integer.parseInt("0"+N); // N=2; tmp=20
 				}
 				
 				while(true){

@@ -43,7 +43,7 @@ public class ForProblem4 { // 15552
 			}
 		}
 		
-		bw.flush();
+		bw.flush(); 
 		
 		br.close();
 		bw.close();

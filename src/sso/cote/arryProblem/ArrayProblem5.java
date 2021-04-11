@@ -14,8 +14,9 @@ public class ArrayProblem5 { // 1546
 		
 		int N = sc.nextInt(); // 점수 갯수
 		
+		// double : 8byte / float : 4byte
 		double[] scoreArr = new double[N]; // 점수를 받는 배열
-		double M = 0; // 점수 최댓값
+		double M = 0; // 점수 최댓값 
 		double sum = 0; // 합
 		double avg = 0; // 평균
 		

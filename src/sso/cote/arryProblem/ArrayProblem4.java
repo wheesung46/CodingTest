@@ -11,7 +11,7 @@ public class ArrayProblem4 { // 3052
 		
 		Scanner sc = new Scanner(System.in);
 		
-		int[] arr = new int[10];
+		int[] arr = new int[10]; // 42로 나눈 나머지 배열
 		int cnt=1; // 서로 다른 값 갯수 (무조건 하나는 존재하기에 1로 초기화해줌)
 		
 		for(int i=0; i<10; i++) { // 10개 까지 입력받고

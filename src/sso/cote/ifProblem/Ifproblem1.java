@@ -16,5 +16,7 @@ public class Ifproblem1 { // 1330
 		}
 		else
 			System.out.println("==");
+		
+		sc.close();
 	}
 }

@@ -12,8 +12,8 @@ public class ForProblem9 { // 2438
 		int N = sc.nextInt();
 		
 		if(N>=1 && N<=100) {
-			for(int i=0; i<=N; i++) {
-				for(int j=0; j<i; j++) {
+			for(int i=0; i<N; i++) {
+				for(int j=0; j<=i; j++) {
 					System.out.print("*");
 				}
 				System.out.println();

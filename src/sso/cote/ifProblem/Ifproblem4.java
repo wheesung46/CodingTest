@@ -19,7 +19,7 @@ public class Ifproblem4 { // 14681
 			System.out.println("Quadrant n : 제2사분면");
 		}else if(x<0 && y<0) {
 			System.out.println("Quadrant n : 제3사분면");
-		}else {
+		}else if(x>0 && y<0){
 			System.out.println("Quadrant n : 제4사분면");
 		}
 	}

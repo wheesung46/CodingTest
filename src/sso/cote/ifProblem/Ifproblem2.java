@@ -24,5 +24,6 @@ public class Ifproblem2 { // 9498
 		}else {
 			System.out.println("점수가 아닙니다.");
 		}
+		sc.close();
 	}
 }
