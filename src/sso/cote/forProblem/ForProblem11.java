@@ -1,7 +1,8 @@
 package sso.cote.forProblem;
 
+import java.io.BufferedReader;
 import java.io.IOException;
-import java.util.Scanner;
+import java.io.InputStreamReader;
 
 public class ForProblem11 {
 	public static void main(String[] args) throws IOException {
@@ -11,14 +12,14 @@ public class ForProblem11 {
 		// 둘째 줄에 수열 A를 이루는 정수 N개가 주어진다. 주어지는 정수는 모두 1보다 크거나 같고, 10,000보다 작거나 같은 정수이다.
 		
 		// -----> Bufferer로 풀어보는게 좋을거같음!
-		Scanner sc = new Scanner(System.in);
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		int N = sc.nextInt(); // 입력 갯수
-		int X = sc.nextInt(); // 비교할 수
+		int N = Integer.parseInt(br.readLine()); // 입력 갯수
+		int X = Integer.parseInt(br.readLine()); // 비교할 수
 		
 		if(N>=1 && X<=10000) {
 			for(int i=0; i<N; i++) { // 10개만 입력하도록 해야되나...?
-				int A = sc.nextInt();
+				int A = Integer.parseInt(br.readLine());
 				
 				if(A<X) {
 					System.out.print(A+" ");
@@ -28,7 +29,7 @@ public class ForProblem11 {
 			System.out.println("범위가 아닙니다.");
 		}
 		
-		sc.close();
+		br.close();
 		
 	}
 }

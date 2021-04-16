@@ -1,7 +1,11 @@
 package sso.cote.functProblem;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 public class FuctionProblem1 { // 15596
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		/*
 		정수 n개가 주어졌을 때, n개의 합을 구하는 함수를 작성하시오.
 
@@ -26,5 +30,27 @@ public class FuctionProblem1 { // 15596
 		
 		*/
 		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		int n = Integer.parseInt(br.readLine());
+		int[] a = new int[n];
+		
+		for(int i=0; i<n; i++) {
+			a[i] = (int)(Math.random()*100)+1;
+		}
+		long sum = Test(a);
+		
+		System.out.println(sum);
+		
+		br.close();
+		
+	}
+	
+	public static long Test(int[] a) {
+		long sum = 0;
+		for(int i=0; i<a.length; i++) {
+			sum+=a[i];
+		}
+		return sum;
 	}
 }
