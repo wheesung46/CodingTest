@@ -1,4 +1,4 @@
-package whee.cote.function;
+package whee.cote.Function;
 
 public class FunctionProblem2 {
 	public static void main(String[] args) {

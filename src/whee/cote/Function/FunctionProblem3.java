@@ -1,4 +1,4 @@
-package whee.cote.function;
+package whee.cote.Function;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
